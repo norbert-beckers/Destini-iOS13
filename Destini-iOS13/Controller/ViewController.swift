@@ -16,17 +16,6 @@ class ViewController: UIViewController {
     
     var storyModel = StoryModel()
     
-    let stories = [
-        Story(title: "You see a fork in the road.",
-              choices: ["Take a left.", "Take a right."]),
-        Story(title: "You see a tiger.",
-              choices: ["You shout for help.", "Play dead."]),
-        Story(title: "You find a treasure chest",
-              choices: ["Open it", "Check for traps."])
-    ]
-    
-    var storyIndex = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()

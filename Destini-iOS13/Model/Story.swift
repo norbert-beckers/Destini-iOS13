@@ -10,10 +10,12 @@ import Foundation
 
 struct Story {
     let title: String
-    let choices : [String]
+    let choice1 : Choice
+    let choice2 : Choice
     
-    init(title: String, choices: [String]) {
+    init(title: String, choice1: String, choice1Destination: Int, choice2: String, choice2Destination: Int) {
         self.title = title
-        self.choices = choices
+        self.choice1 = Choice(text: choice1, destination: choice1Destination)
+        self.choice2 = Choice(text: choice2, destination: choice2Destination)
     }
 }
